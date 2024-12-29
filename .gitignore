@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+!AUDIO
+!AUDIO/first_beat
+!AUDIO/second_beat
+!MuseeAppApp
+!ContentView
+!Assets
