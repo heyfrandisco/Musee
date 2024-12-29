@@ -2,8 +2,7 @@
 
 !.gitignore
 !AUDIO
-!AUDIO/first_beat
-!AUDIO/second_beat
-!MuseeAppApp
-!ContentView
-!Assets
+!AUDIO/first_beat.wav
+!AUDIO/second_beat.wav
+!MuseeAppApp.swift
+!ContentView.swift
