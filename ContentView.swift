@@ -269,53 +269,6 @@ struct ContentView: View {
                 }
                 
                 Spacer()
-                
-                /*
-                VStack {
-                    var drumSounds: [[DrumSound]] = [
-                           [DrumSound(name: "Kick", audioFile: "musee_kick.mp3", isActive: false), DrumSound(name: "Clap", audioFile: "musee_clap.mp3", isActive: false), DrumSound(name: "Hat", audioFile: "musee_hat.mp3", isActive: false)],
-                           [DrumSound(name: "Kick", audioFile: "musee_kick.mp3", isActive: false), DrumSound(name: "Clap", audioFile: "musee_clap.mp3", isActive: false), DrumSound(name: "Hat", audioFile: "musee_hat.mp3", isActive: false)],
-                           [DrumSound(name: "Kick", audioFile: "musee_kick.mp3", isActive: false), DrumSound(name: "Clap", audioFile: "musee_clap.mp3", isActive: false), DrumSound(name: "Hat", audioFile: "musee_hat.mp3", isActive: false)],
-                           [DrumSound(name: "Kick", audioFile: "musee_kick.mp3", isActive: false), DrumSound(name: "Clap", audioFile: "musee_clap.mp3", isActive: false), DrumSound(name: "Hat", audioFile: "musee_hat.mp3", isActive: false)]
-                       ]
-                    
-                    var audioPlayer: AVAudioPlayer?
-                        
-                            VStack(spacing: 20) {
-                                ForEach(0..<4) { row in
-                                    HStack(spacing: 20) {
-                                        ForEach(0..<3) { col in
-                                            Button(action: {
-                                                // Toggle the isActive property of the drum sound
-                                                drumSounds[row][col].isActive.toggle()
-                                                // Play the audio file associated with the drum sound
-                                                if let audioFile = Bundle.main.path(forResource: drumSounds[row][col].audioFile, ofType: nil) {
-                                                    do {
-                                                        // Initialize the audio player if it's not already initialized
-                                                        if audioPlayer == nil {
-                                                            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioFile))
-                                                            audioPlayer?.prepareToPlay()
-                                                        }
-                                                        // Play the audio file
-                                                        audioPlayer?.play()
-                                                    } catch {
-                                                        print("Error playing audio file: \(error.localizedDescription)")
-                                                    }
-                                                }
-                                            }) {
-                                                Text(drumSounds[row][col].name)
-                                                    .foregroundColor(drumSounds[row][col].isActive ? .white : .black)
-                                                    .padding()
-                                                    .background(drumSounds[row][col].isActive ? Color.blue : Color.indigo)
-                                                    .cornerRadius(10)
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .padding()
-                        }
-                */
             }
             
             .padding()
